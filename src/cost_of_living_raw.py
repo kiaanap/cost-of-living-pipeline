@@ -8,7 +8,7 @@ API_KEY = os.getenv("APIVERVE_API_KEY")
 if not API_KEY:
     raise EnvironmentError("APIVERVE_API_KEY not set")
 
-BASE_URL = "https://api.apiverve.com/v1/costofliving"
+BASE_URL = "https://api.apiverve.com/v1/costofliving/costofliving"
 
 # RAW DATA FUNCTION
 
