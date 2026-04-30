@@ -3,9 +3,9 @@ from statistics import mean
 # Helper Function
 
 def classify_cost(cost_index):
-    if cost_index < 90:
+    if cost_index < 95:
         return "low"
-    elif cost_index <= 110:
+    elif cost_index <= 105:
         return "average"
     else:
         return "high"
