@@ -30,7 +30,7 @@ def fetch_gas_price_raw(state_code):
     if not RAPIDAPI_KEY:
         raise EnvironmentError("RAPIDAPI_KEY not set")
 
-    url = "https://gas-price.p.rapidapi.com/usaStateCode"
+    url = "https://gas-price.p.rapidapi.com/state"
 
     headers = {
         "X-RapidAPI-Key": RAPIDAPI_KEY,
@@ -38,7 +38,7 @@ def fetch_gas_price_raw(state_code):
     }
 
     params = {
-        "state": state_code
+        "code": state_code  # e.g. "CA"
     }
 
     response = requests.get(url, headers=headers, params=params, timeout=10)
