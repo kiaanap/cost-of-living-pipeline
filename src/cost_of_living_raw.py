@@ -32,9 +32,3 @@ if __name__ == "__main__":
 
     print("Raw API response:")
     print(data)
-
-
-    data = fetch_cost_of_living_raw(test_location)
-
-    print("Raw API response:")
-    print(data)
